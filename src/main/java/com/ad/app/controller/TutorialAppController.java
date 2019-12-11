@@ -48,12 +48,12 @@ public class TutorialAppController {
         topicService.createTopic(topic);
     }
 
-    @PutMapping("/topics")
+    @PutMapping("/topics") //RESTful way to define the resource path would be '/topics/{id}'
     public void updateTopic(@RequestParam(value="id") String id, @RequestBody Topic topic) {
         topicService.updateTopic(id, topic);
     }
 
-    @DeleteMapping("/topics")
+    @DeleteMapping("/topics") //RESTful way to define the resource path would be '/topics/{id}'
     public void deleteTopic(@RequestHeader(value="topic-id") String id) {
         topicService.deleteTopic(id);
     }
