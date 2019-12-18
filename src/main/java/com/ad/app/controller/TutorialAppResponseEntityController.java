@@ -26,12 +26,12 @@ public class TutorialAppResponseEntityController {
 
     @GetMapping("/topics")
     public ResponseEntity<List<Topic>> retrieveAllTopics() {
-        return ResponseEntity.status(HttpStatus.OK).body(topicService.getAllTopics());
+        return ResponseEntity.ok().body(topicService.getAllTopics());
     }
 
     @GetMapping("/topics/{id}")
     public ResponseEntity<Topic> retrieveTopicIdFromPathParam(@PathVariable String id) {
-        return ResponseEntity.status(HttpStatus.OK).body(topicService.getTopic(id));
+        return ResponseEntity.ok(topicService.getTopic(id));
     }
 
     @PostMapping("/topics")
