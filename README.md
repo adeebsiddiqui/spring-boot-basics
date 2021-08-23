@@ -3,4 +3,6 @@ The project contains the basics of Spring Boot Application. Checkout recommended
 
 This also includes some basic examples of Java Bean Validation API in the `Controller` and `Model` classes. To learn more about Java Bean Validation API, please see [this](https://www.baeldung.com/javax-validation) article.
 
+Read about [Dependency Management Plugin](https://docs.spring.io/dependency-management-plugin/docs/current/reference/html) which is a Gradle plugin that provides Maven-like dependency management and exclusions.
+
 Make sure to read [Getting Started](https://github.com/echosiddiqui/spring-boot-basics/blob/master/HELP.md) to learn more.
